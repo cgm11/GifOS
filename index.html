@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifos</title>
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/principal.css">
+</head>
+
+<body>
+    <div class="min-header head-shadow">
+        <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+    </div>
+    <div class="container">
+        <div class="cont cont-logo">
+            <div class="logo"><img src="./assets/gifOF_logo.png" alt="Logo fondo claro"></div>
+            <div class="logo boton-logo">
+                <button onclick="window.location.href ='./html/misGuifos.html'">Crear Guifos</button>
+                <div></div>
+                <button>Elegir tema</button>
+                <button><img src="./assets/dropdown.svg" alt="logo botón"></button>
+                <div></div>
+                <p>Mis Guifos</p>
+            </div>
+        </div>
+        <div class="buscar">
+            <div class="min-header head-shadow">
+                <p>Buscar</p>
+            </div>
+            <div class="cont cont-buscar">
+                <input type="text" id="in-buscar" placeholder="    Busca gifs, hashtags, temas, busca lo que quieras…">
+                <button class="btn-buscar" id="btn-buscar"><img src="./assets/lupa_inactive.svg"
+                        alt="lupa botón inactivo">Buscar</button>
+            </div>
+        </div>
+        <div class="sugerencia">
+            <div class="p-suger">Hoy te sugerimos:</div>
+            <div class="guifos" id="gifSuger">
+                <!--Aca se inserta el codigo para los contenedores de los gifs sugerencias-->
+            </div>
+        </div>
+        <div class="sugerencia">
+            <div class="p-suger">Tendencias:</div>
+            <div class="guifos" id="gifTrend">
+                <!--Aca se inserta el codigo para los contenedores de los gifs de tendecia-->
+            </div>
+        </div>
+    </div>
+    <script src="./JS/app.js"></script>
+</body>
+
+</html>

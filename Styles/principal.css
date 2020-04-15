@@ -1,0 +1,148 @@
+*{
+    border: 0px;
+    margin: 0px;
+    font-family: 'Chakra Petch', sans-serif; 
+    font-weight: normal;
+}
+body{
+    border: 1px solid #FFFFFF;
+}
+.container{
+    margin: 0% 6.944% ;
+}
+/*estilo general botones*/
+button{
+    height: 36px;
+    background-color: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    color: #110038;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+/*Estilos encabezado*/
+.min-header{
+    height: 24px;
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    color: #FFFFFF;
+}
+.head-shadow{
+    display: flex;
+    box-shadow: 0 1px 0 0 #110038;
+    align-items: center;
+    padding-left: 7px;
+    font-size: 12px;
+}
+/*Estilos logo y botones principales*/
+.cont{    
+    display: flex;
+    justify-content: space-between;    
+}
+.cont-logo{
+    height: 115px;
+}
+.logo{
+    align-self: center;
+}
+.boton-logo{
+    display: grid;
+    grid-template-columns: 144px 16px 131px 36px 16px 76px;    
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 18px;
+    color: #110038;    
+}
+.boton-logo p{
+    align-self: center;
+}
+/*Estilos buscador*/
+.buscar{
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    font-weight: bold;
+}
+.cont-buscar{
+    height: 72px;
+    background: #E6E6E6;   
+}
+.cont-buscar input{
+    width: 88.0833%;
+    height: 48px;
+    align-self: center;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+    margin-left: 1.25%;
+    font-size: 16px;
+    letter-spacing: 0; 
+    line-height: 22px;
+}
+::placeholder { 
+    color: #B4B4B4;
+  }
+.cont-buscar button{
+    height: 36px;
+    width: 8.5%;
+    align-self: center;
+    background: #E6E6E6;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    margin-right: 1.5%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    color: #B4B4B4;
+    letter-spacing: 0; 
+    line-height: 18px;
+
+}
+/*Estilos guifos*/
+.sugerencia{
+    margin-top: 64px; 
+}
+.p-suger{
+    background: #FFFAFE;
+    border: 1px solid #E6BBE2;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+    height: 32px;
+    align-items: center;
+    font-size: 14px;
+    color: #110038;
+    letter-spacing: 0;
+    padding-left: 7px;
+    display: flex;
+}
+.guifos{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4px;
+    justify-content: space-between;
+}
+.guifos-column{
+    display: flex;
+    flex-direction: column; 
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+.head-suger{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    align-items: center;
+    padding: 0px 8px 0px 4px;
+}
+.cont-suger, .cont-trend{
+    position: relative;        
+}
+.cont-trend, .head-suger{
+    border-top: 16px solid #FFFFFF;
+}
+.cont-suger button{
+    left: 7px;
+    bottom: 15px;
+    position: absolute;
+    font-size: 14px;
+    color: #FFFFFF;
+    background: #4180F6;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+}

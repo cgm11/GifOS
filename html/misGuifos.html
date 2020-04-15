@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Guifos</title>
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/principal.css">
+    <link rel="stylesheet" href="../Styles/misGuifos.css">
+</head>
+
+<body>
+    <div class="min-header head-shadow">
+        <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+    </div>
+    <a id="return" href="../index.html"><img src="../assets/arrow.svg" alt="botón devolverse a página principal"></a>
+    <div class="container">
+        <div class="cont cont-logo">
+            <div class="logo"><img src="../assets/gifOF_logo.png" alt="Logo fondo claro"></div>
+        </div>
+        <div class="crearGif">
+            <div class="min-header head-crear">
+                <p id="p-crear">Crear Guifos</p>
+                <img id="close-record" class="hidden" src="../assets/button3.svg" alt="Botón cerrar">
+            </div>
+            <img id="window" src="../assets/window img.png">
+            <div class="cont-crear">
+                <div class="tit-crear">
+                    <p>Aquí podrás crear tus propios guifos</p>
+                </div>
+                <div class="desc-crear">
+                    <p>Crear tu <span style="font-style: italic;">guifo</span> es muy fácil, graba cualquier imagen con
+                        tu cámara y obtén guifos personalizados.
+                        Los pasos para crear tu guifo son:</p>
+                    <p><span>1)</span> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</p>
+                    <p><span>2)</span> Capturar tu momento guifo</p>
+                    <p><span>3)</span> Revisar el momento</p>
+                    <p><span>4)</span> Listo para subir y compartir!</p>
+                    <p>¿Quieres comenzar a crear tu <span style="font-style: italic;">guifo</span> ahora?</p>
+                </div>
+            </div>
+            <div class="btn">
+                <!--botones cuando se pasa a la página para capturar-->
+                <button class="btn-crear btn-blanco" id="btn-cancelar">Cancelar</button>
+                <button class="btn-crear" id="btn-crear">Comenzar</button>
+            </div>
+            <div class="btn-capt">
+                <!--botones para comenzar a grabar-->
+                <button id="btn-2"><img src="../assets/camera.svg"></button>
+                <button id="btn-record">Capturar</button>
+            </div>
+            <div class="btn-capt" id="stop">
+                <!--botones para finalizar grabacion-->
+                <button id="btn-3"><img src="../assets/recording.svg"></button>
+                <button id="btn-stop">Listo</button>
+            </div>
+            <div class="btn-capt" id="preview">
+                <!--botones para finalizar grabacion-->
+                <button id="btn-repetir" class="btn-blanco">Repetir Captura</button>
+                <button id="btn-subir">Subir Guifo</button>
+            </div>
+            <div class="grid">
+                <div class="btn-capt" id="timer">
+                    <span id="hor">00</span><span>:</span><span id="min">00</span><span>:</span>
+                    <span id="seg">00</span><span>:</span><span id="mili">00</span>
+                </div>
+                <div></div>
+                <div>
+                    <button id="btn-play" class="hidden"><img src="../assets/forward.svg"
+                            alt="boton de reproduccion de gif creado"></button>
+                </div>
+                <div></div>
+                <div id="barra" class="hidden">
+                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="../JS/misGuifos.js"></script>
+</body>
+
+</html>
