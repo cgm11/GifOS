@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Styles/principal.css">
     <link rel="stylesheet" href="../Styles/misGuifos.css">
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon"/>
 </head>
 
 <body>
@@ -40,6 +41,23 @@
                     <p>¿Quieres comenzar a crear tu <span style="font-style: italic;">guifo</span> ahora?</p>
                 </div>
             </div>
+            <div id="contRecord" class="hidden"></div>
+            <div id="contSubir" class="hidden">
+                <img src="../assets/globe_img.png" alt="imagen subiendo">
+                <p id="p1">Estamos subiendo tu guifo…</p>
+                <div id="barraSubir">
+                    <span class="barsb gris"></span><span class="barsb gris"></span><span class="barsb gris"></span>
+                    <span class="barsb gris"></span><span class="barsb gris"></span><span class="barsb gris"></span>
+                    <span class="barsb gris"></span><span class="barsb gris"></span><span class="barsb gris"></span>
+                    <span class="barsb gris"></span><span class="barsb gris"></span><span class="barsb gris"></span>
+                    <span class="barsb gris"></span><span class="barsb gris"></span><span class="barsb gris"></span>
+                    <span class="barsb gris"></span><span class="barsb gris"></span><span class="barsb gris"></span>
+                    <span class="barsb gris"></span><span class="barsb gris"></span><span class="barsb gris"></span>
+                    <span class="barsb gris"></span><span class="barsb gris"></span>
+                </div>
+                <p id="p2">Tiempo restante: <span>38 años</span> algunos minutos</p>
+
+            </div>
             <div class="btn">
                 <!--botones cuando se pasa a la página para capturar-->
                 <button class="btn-crear btn-blanco" id="btn-cancelar">Cancelar</button>
@@ -60,11 +78,12 @@
                 <button id="btn-repetir" class="btn-blanco">Repetir Captura</button>
                 <button id="btn-subir">Subir Guifo</button>
             </div>
-            <div class="grid">
-                <div class="btn-capt" id="timer">
-                    <span id="hor">00</span><span>:</span><span id="min">00</span><span>:</span>
-                    <span id="seg">00</span><span>:</span><span id="mili">00</span>
-                </div>
+            <div class="btn-capt btn-cancelar" id="subir">
+                <!--botones para cancelar la subida del gif-->
+                <button id="btn-cancelSubir" class="btn-blanco">Cancelar</button>
+            </div>
+            <div class="grid" id="grid">
+                <div class="btn-capt" id="timer">00:00:00:000</div>
                 <div></div>
                 <div>
                     <button id="btn-play" class="hidden"><img src="../assets/forward.svg"
@@ -72,13 +91,21 @@
                 </div>
                 <div></div>
                 <div id="barra" class="hidden">
-                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                    <span class="bar gris"></span><span class="bar gris"></span><span class="bar gris"></span><span class="bar gris">
+                    </span><span class="bar gris"></span><span class="bar gris"></span class="bar gris"><span class="bar gris"></span>
+                    <span class="bar gris"></span><span class="bar gris"></span><span class="bar gris"></span><span class="bar gris">                        
+                    </span><span class="bar gris"></span><span class="bar gris"></span class="bar gris"><span class="bar gris"></span>
+                    <span class="bar gris"></span><span class="bar gris"></span><span class="bar gris"></span>
                 </div>
             </div>
         </div>
     </div>
     </div>
     <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="../JS/Contenedores.js"></script>
+    <script src="../JS/Cronometro.js"></script>
+    <script src="../JS/Camara.js"></script>
+    <script src="../JS/ConsumoAPI.js"></script>
     <script src="../JS/misGuifos.js"></script>
 </body>
 

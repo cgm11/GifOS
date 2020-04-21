@@ -66,7 +66,7 @@
     right: 16px;
     bottom: 16px;
 }
-.btn-crear, #btn-repetir, #btn-subir{
+.btn-crear, #btn-repetir, #btn-subir, #btn-cancelSubir{
     width: 144px;
     height: 36px;
 }
@@ -74,14 +74,18 @@
     background-color: #FFFFFF;
     margin-right: 10px;
 }
-#contRecord{
+.btn-cancelar{
+    right: 14px;
+    bottom: 16px;
+}
+#contRecord, #contSubir{
     height: 434px;
     margin: 11px 1.98% 0px 1.28%;
     background: #FFFFFF;
     border: 1px solid #979797;
     box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
 }
-.video, #imgPreview{
+#video, #imgPreview{
     margin: 2px;
     height: 430px;
     width: 99.5%;
@@ -127,10 +131,50 @@
     grid-template-rows: 20px; 
     column-gap: 2px;
 }
-.barra span{
+.barraSubir{
+    margin-top: 39px;
+    width: 324px;
+    height: 22px;
+    background: #B4B4B4;
+    box-shadow:inset -2px -2px 0 0 #FFFCFC, inset 2px 2px 0 0 #000000;
+    padding: 2px 0px 0px 2px;
+    display: grid;
+    grid-template-columns: 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px;
+    grid-template-rows: 20px; 
+    column-gap: 2px;
+}
+.barra .gris, .barraSubir .gris{
     background-color: #999999;
 }
 #btn-play{
     width: 24px;
     height: 24px;
 }
+.barra .cambioColor, .barraSubir .cambioColor{
+    background-color: #F7C9F3;
+}
+.contSubir{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contSubir #p1{
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    font-weight: bold;
+}
+.contSubir #p2{
+    font-size: 12px;
+    color: #00001A;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 14px;
+}
+.contSubir #p2 span{
+    text-decoration: line-through;
+}
+
