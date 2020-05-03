@@ -95,8 +95,8 @@
     outline-offset: -4px;        
 }
 .SailorNight #btn-2 img{
-    filter: invert;
-    -webkit-filter: invert;
+    filter: invert(1);
+    -webkit-filter: invert(1);
 }
 .SailorNight .barra .cambioColor, .SailorNight .barraSubir .cambioColor{
     background-color: #EE3EFE;
