@@ -79,7 +79,7 @@ palabrasRelacionadas = () =>{
 
 //Función para obtener los guifos de la sección hoy te sugerimos cuando recargan la página
 function getWeSuggestResults() {
-    const found = fetch(`https://api.giphy.com/v1/gifs/trending?api_key=${apiKey}&limit=21&rating=G`)
+    const found = fetch(`http://api.giphy.com/v1/gifs/trending?api_key=${apiKey}&limit=21&rating=G`)
         .then(response => {
             return response.json();
         })
@@ -145,7 +145,7 @@ function getSearchResults(boton) {
     }else{
         search = boton;
     }
-    const found = fetch(`https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${search}&limit=21&offset=0&rating=G`)
+    const found = fetch(`http://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${search}&limit=21&offset=0&rating=G`)
         .then(response => {
             return response.json();
         })

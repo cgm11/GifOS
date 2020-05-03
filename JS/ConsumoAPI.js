@@ -36,7 +36,7 @@ class ConsumoAPI {
 
     urlGifById = () => {
         let id = localStorage.getItem("id's").split(",")[0];
-        let gifById = `https://api.giphy.com/v1/gifs?api_key=${apiKey}&ids=${id}`
+        let gifById = `http://api.giphy.com/v1/gifs?api_key=${apiKey}&ids=${id}`
         const el = document.createElement('textarea');
         el.value = gifById;
         document.body.appendChild(el);
@@ -48,7 +48,7 @@ class ConsumoAPI {
     misGifos = () => {
         let ids = localStorage.getItem("id's");
         console.log(`api.giphy.com/v1/gifs?api_key=${apiKey}&ids=${ids}`);
-        fetch(`https://api.giphy.com/v1/gifs?api_key=${apiKey}&ids=${ids}`)
+        fetch(`http://api.giphy.com/v1/gifs?api_key=${apiKey}&ids=${ids}`)
             .then(response => {
                 return response.json();
             })
