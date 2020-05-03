@@ -7,8 +7,10 @@
     <title>Mis Guifos</title>
     <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Styles/principal.css">
+    <link rel="stylesheet" href="../Styles/temaOscuro.css">
     <link rel="stylesheet" href="../Styles/misGuifos.css">
-    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon"/>
+    
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
@@ -58,6 +60,16 @@
                 <p id="p2">Tiempo restante: <span>38 años</span> algunos minutos</p>
 
             </div>
+            <div class="cont-gifListo hidden" id="cont-gifListo">
+                <div id="cont_img" class="hidden">
+                    <img id="img-gifo" src="" alt="Gifo subido exitosamente">
+                </div>
+                <div class="hidden" id="cont-botones">
+                    <p>Guifo creado con éxito</p>
+                    <button id="btn-copiar" class="btn-blanco btn-listo">Copiar Enlace Guifo</button>
+                    <button id="btn-descargar" class="btn-blanco btn-listo">Descargar Guifo</button>
+                </div>
+            </div>
             <div class="btn">
                 <!--botones cuando se pasa a la página para capturar-->
                 <button class="btn-crear btn-blanco" id="btn-cancelar">Cancelar</button>
@@ -82,6 +94,9 @@
                 <!--botones para cancelar la subida del gif-->
                 <button id="btn-cancelSubir" class="btn-blanco">Cancelar</button>
             </div>
+            <div class="btn-capt" id="listo">
+                <button id="btn-listo">Listo</button>
+            </div>
             <div class="grid" id="grid">
                 <div class="btn-capt" id="timer">00:00:00:000</div>
                 <div></div>
@@ -91,11 +106,23 @@
                 </div>
                 <div></div>
                 <div id="barra" class="hidden">
-                    <span class="bar gris"></span><span class="bar gris"></span><span class="bar gris"></span><span class="bar gris">
-                    </span><span class="bar gris"></span><span class="bar gris"></span class="bar gris"><span class="bar gris"></span>
-                    <span class="bar gris"></span><span class="bar gris"></span><span class="bar gris"></span><span class="bar gris">                        
-                    </span><span class="bar gris"></span><span class="bar gris"></span class="bar gris"><span class="bar gris"></span>
+                    <span class="bar gris"></span><span class="bar gris"></span><span class="bar gris"></span><span
+                        class="bar gris">
+                    </span><span class="bar gris"></span><span class="bar gris"></span class="bar gris"><span
+                        class="bar gris"></span>
+                    <span class="bar gris"></span><span class="bar gris"></span><span class="bar gris"></span><span
+                        class="bar gris">
+                    </span><span class="bar gris"></span><span class="bar gris"></span class="bar gris"><span
+                        class="bar gris"></span>
                     <span class="bar gris"></span><span class="bar gris"></span><span class="bar gris"></span>
+                </div>
+            </div>
+        </div>
+        <div class="contMisGigos">
+            <div class="p-suger">Mis guifos</div>
+            <div id="contMisGigos">
+                <div class="guifos" id="cont-misGifos">
+                    <!--Aca se inserta el codigo para mis guifos-->
                 </div>
             </div>
         </div>

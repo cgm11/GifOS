@@ -1,0 +1,111 @@
+.SailorNight{
+    background-color: #110038;
+}
+.SailorNight .min-header{
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+.SailorNight .cont-trend, .SailorNight .head-suger{
+    border-top: 16px solid #110038;
+}
+.SailorNight button{
+    background: #EE3EFE;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    color: #FFFFFF;
+}
+.SailorNight button:hover, .SailorNight .logo div:hover .juntos, .SailorNight .active{
+    background: #CE36DB;
+}
+.SailorNight .boton-logo{
+    color: #FFFFFF;
+}
+.SailorNight .boton-logo a{
+    color: #FFFFFF;
+}
+
+.SailorNight .boton-logo a:hover{
+    outline: 1px dotted #FFFFFF;
+    outline-offset: 7px;
+}
+.SailorNight ul{
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;    
+}
+.SailorNight ul button{
+    background: #CCCCCC;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    color: #110038;
+}
+.SailorNight .logo ul button:hover { 
+    background: #2E32FB;
+    border: 1px solid rgba(51,53,143,0.20);
+    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+    background-clip: padding-box;    
+    color: #FFFFFF;
+}
+.SailorNight #tema img{
+    filter: invert(1);
+}
+.SailorNight .buscar{
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+.SailorNight .cont-buscar{
+    background: #B4B4B4;
+}
+.SailorNight .cont-buscar button{
+    background: #B4B4B4;
+    color: #8F8F8F;
+}
+.SailorNight .btn-buscar-inactive{   
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+.SailorNight .cont-buscar .btn-buscar-active{   
+    background: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    color: #FFFFFF;
+}
+
+.SailorNight .cont-buscar .btn-buscar-push{   
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    background: #CE36DB;
+    color: #FFFFFF;
+}
+.SailorNight .p-suger{
+    border: 1px solid #E6BBE2;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+}
+.SailorNight .guifos-column, .SailorNight .crearGif, .SailorNight .crearGif-push{
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+}
+.SailorNight .head-suger{
+    box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+}
+.SailorNight .btn-blanco{
+    background: #110038;
+    border: 1px solid #B4B4B4;
+    box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+}
+.SailorNight .btn-blanco:hover{
+    background: #110038;
+    border: 1px solid #B4B4B4;
+    box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+    outline: 1px dotted #FFFFFF;
+    outline-offset: -4px;        
+}
+.SailorNight #btn-2 img{
+    filter: invert;
+    -webkit-filter: invert;
+}
+.SailorNight .barra .cambioColor, .SailorNight .barraSubir .cambioColor{
+    background-color: #EE3EFE;
+}
+.SailorNight .btn-azul{
+    background: #2629CC;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+}
+.SailorNight .btn-azul:hover{
+    background: #2629CC;
+}

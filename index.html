@@ -7,10 +7,12 @@
     <title>Gifos</title>
     <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Styles/principal.css">
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="./Styles/temaOscuro.css">
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
+    <!--class="SailorNight"-->
     <div class="min-header head-shadow">
         <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
     </div>
@@ -20,30 +22,53 @@
             <div class="logo boton-logo">
                 <button onclick="window.location.href ='./html/misGuifos.html'">Crear Guifos</button>
                 <div></div>
-                <button>Elegir tema</button>
-                <button><img src="./assets/dropdown.svg" alt="logo botón"></button>
+                <div>
+                <div>
+                    <button class="juntos">Elegir tema</button>
+                    <ul>
+                        <li><button id="btn-dia"><span>S</span>ailor Day</button></li>
+                        <li><button id="btn-noche"><span>S</span>ailor Night</button></li>
+                    </ul>
+                </div>
+                <button class="juntos" id="tema"><img src="./assets/dropdown.svg" alt="logo botón"></button>
+            </div>
                 <div></div>
-                <p>Mis Guifos</p>
+                <a href="./html/mostrarMisGifos.html"><span>M</span>is Guifos</a>
             </div>
         </div>
-        <div class="buscar">
-            <div class="min-header head-shadow">
-                <p>Buscar</p>
+        <div class="buscador">
+            <div class="buscar">
+                <div class="min-header head-shadow">
+                    <p>Buscar</p>
+                </div>
+                <div class="cont cont-buscar">
+                    <input type="text" id="in-buscar" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…"
+                        autocomplete="off" onkeyup="palabrasRelacionadas()">
+                    <button class="btn-buscar-inactive" id="btn-buscar"><img src="./assets/lupa_inactive.svg"
+                            alt="lupa botón inactivo">Buscar</button>
+                </div>
             </div>
-            <div class="cont cont-buscar">
-                <input type="text" id="in-buscar" placeholder="    Busca gifs, hashtags, temas, busca lo que quieras…">
-                <button class="btn-buscar" id="btn-buscar"><img src="./assets/lupa_inactive.svg"
-                        alt="lupa botón inactivo">Buscar</button>
+            <div>
+                <ul>
+                    <li><button>Resultado de búsqueda sugerido</button></li>
+                    <li><button>Un resultado similar de búsqueda</button></li>
+                    <li><button>Y otro más</button></li>
+                </ul>
+            </div>
+            <div class="btn-busqueda">
+                <button class="btn-azul">#Un ejemplo</button>
+                <button class="btn-azul">#Un ejemplomáslargo</button>
+                <button class="btn-azul">#tagsrelacionados</button>
             </div>
         </div>
-        <div class="sugerencia">
+        <div class="sugerencia" id="sugerencias">
             <div class="p-suger">Hoy te sugerimos:</div>
             <div class="guifos" id="gifSuger">
                 <!--Aca se inserta el codigo para los contenedores de los gifs sugerencias-->
             </div>
         </div>
         <div class="sugerencia">
-            <div class="p-suger">Tendencias:</div>
+            <p class="p-suger" id="valorBusqueda">Tendencias:</p>
             <div class="guifos" id="gifTrend">
                 <!--Aca se inserta el codigo para los contenedores de los gifs de tendecia-->
             </div>

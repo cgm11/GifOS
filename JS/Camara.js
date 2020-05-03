@@ -1,4 +1,5 @@
 var recorder, elementCamara;
+var blob;
 class Camara {
 
     constructor() {
@@ -42,30 +43,37 @@ class Camara {
     }
 
     detenerGrabacion = async (cronometro) => {
-        let video = document.getElementById("video");
+        let video = document.getElementById("video");        
         await recorder.stopRecording();
-        const blob = await recorder.getBlob();
+        blob = await recorder.getBlob();
         let form = new FormData();
-        await form.append('file', blob, 'myGif.gif');
+        form.append('api_key', apiKey);
+        form.append('username', 'cgm11');        
+        form.append('file', blob, 'myGif.gif');
+        form.append('tags', 'Carolina, García, cgm11, DWFS');
         urlgif = URL.createObjectURL(blob);
         video.srcObject.getTracks().forEach(track => { // now close each track by having forEach loop            
             track.stop();// stopping every track
         });
         await recorder.reset();
         await recorder.destroy();
+        cronometro.stop();
         video.srcObject = null;
-        cronometro.stop()
-        return urlgif;
+        return form;
     }
 
-    tomarFoto = (contenedor) => {
+    tomarFoto = () => {
         let video = document.getElementById("video");
         let canvas = document.getElementById("canvas");
         canvas.width = 832;
         canvas.height = 434;
         canvas.getContext('2d').drawImage(video, 0, 0, 832, 434);
-        var data = canvas.toDataURL('image/png');
-        let contSuger = `<img id='imgPreview' src="${data}">`;
-        contenedor.innerHTML = contSuger;
+        urlImg = canvas.toDataURL('image/png');
+        let contSuger = `<img id='imgPreview' src="${urlImg}">`;
+        return contSuger;
+    }
+
+    descagarGif = () =>{
+        invokeSaveAsDialog(blob);
     }
 }

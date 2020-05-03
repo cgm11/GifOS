@@ -21,6 +21,11 @@ button{
     letter-spacing: 0;
     line-height: 18px;
 }
+button:hover, .logo div:hover .juntos, .active{
+    background: #E6BBE2;
+    outline: 1px dotted #110038;
+    outline-offset: -4px;
+}
 /*Estilos encabezado*/
 .min-header{
     height: 24px;
@@ -45,29 +50,114 @@ button{
 .logo{
     align-self: center;
 }
+.logo div {
+    position: relative;
+    display: grid;
+    grid-template-columns: 133px 37px;
+}
 .boton-logo{
     display: grid;
-    grid-template-columns: 144px 16px 131px 36px 16px 76px;    
+    grid-template-columns: 144px 16px 170px 16px 76px;    
     font-size: 16px;
     letter-spacing: 0;
     line-height: 18px;
     color: #110038;    
 }
-.boton-logo p{
+.boton-logo a{
     align-self: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: #110038;
 }
+.boton-logo a:hover{
+    outline: 1px dotted #110038;
+    outline-offset: 7px;
+}
+.boton-logo a:active{
+    opacity: 0.5;
+}
+.cont-logo div a:hover span{
+    text-decoration: underline;
+}
+.logo div{
+    position: relative;
+}
+ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    flex-direction: column;
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    width: -webkit-fill-available;
+    padding: 17px 0px 7px 0px;    
+    z-index: 3;
+}
+.logo ul{
+    width: 170px;
+    height: 102px;
+    align-items: center;
+    display:none;
+}
+ul li {
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    margin-bottom: 10px;
+    width: 88%;
+    margin-left: 1.25%;
+}
+.logo ul button{
+    width: 150px;
+    height: 36px;    
+    background: #FFF4FD;
+    border: 1px solid #CCA6C9;
+    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+    background-clip: padding-box;
+}
+ul button{
+    background: #F0F0F0;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    width: 100%;
+    text-align: left;
+    padding-left: 16px;
+}
+.logo ul button:hover { 
+    background: #F0F0F0;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    background-clip: padding-box;
+    color: #110038;
+}
+ul button:hover{
+    outline: 1px dotted #110038;
+    outline-offset: -4px;
+    background: #DBDBDB;
+}
+.logo ul button:hover span{
+    text-decoration: underline;
+}
+.buscador{
+    position: relative;
+}
+
 /*Estilos buscador*/
 .buscar{
     box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
     font-weight: bold;
+    padding: 2px;
 }
 .cont-buscar{
     height: 72px;
     background: #E6E6E6;   
 }
 .cont-buscar input{
-    width: 88.0833%;
-    height: 48px;
+    width: 85%;
+    padding: 13px 16px;
     align-self: center;
     border: 1px solid #979797;
     box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
@@ -77,23 +167,32 @@ button{
     line-height: 22px;
 }
 ::placeholder { 
-    color: #B4B4B4;
+    color: #B4B4B4;     
   }
 .cont-buscar button{
     height: 36px;
     width: 8.5%;
     align-self: center;
-    background: #E6E6E6;
-    border: 1px solid #808080;
-    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
     margin-right: 1.5%;
     display: flex;
     justify-content: space-around;
-    font-size: 16px;
-    color: #B4B4B4;
+    font-size: 16px;    
     letter-spacing: 0; 
     line-height: 18px;
-
+}
+.btn-buscar-inactive{    
+    background: #E6E6E6;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    color: #B4B4B4;
+    pointer-events: none;
+}
+.btn-buscar-push{
+    background: #E6BBE2;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    outline: 1px dotted #110038;
+    outline-offset: -4px;
 }
 /*Estilos guifos*/
 .sugerencia{
@@ -122,6 +221,7 @@ button{
     flex-direction: column; 
     background: #E6E6E6;
     box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    position: relative;
 }
 .head-suger{
     display: flex;
@@ -129,9 +229,25 @@ button{
     box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
     align-items: center;
     padding: 0px 8px 0px 4px;
+    font-size: 14px;
+}
+.head-trend {
+    display: none;
+    align-items: center;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0px;
+    width: -webkit-fill-available;
+}
+.guifos-column:hover .head-trend{
+    display: flex;
 }
 .cont-suger, .cont-trend{
     position: relative;        
+}
+.cont-suger:hover img, .cont-suger:hover button, .cont-trend:hover img{
+    outline: 1px dotted #110038;
+    outline-offset: -4px;        
 }
 .cont-trend, .head-suger{
     border-top: 16px solid #FFFFFF;
@@ -145,4 +261,15 @@ button{
     background: #4180F6;
     border: 1px solid #4C2F99;
     box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.btn-azul{
+    background: #4180F6;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+    color: #FFFFFF;
+}
+.btn-busqueda{
+    margin-top: 12px;
+    display: none;
 }

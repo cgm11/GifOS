@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifos</title>
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/principal.css">
+    <link rel="stylesheet" href="../Styles/temaOscuro.css">
+    <link rel="stylesheet" href="../Styles/misGuifos.css">
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <div class="min-header head-shadow">
+        <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+    </div>
+    <a id="return" href="../index.html"><img src="../assets/arrow.svg" alt="botón devolverse a página principal"></a>
+    <div class="container">
+        <div class="cont cont-logo">
+            <div class="logo"><img src="../assets/gifOF_logo.png" alt="Logo fondo claro"></div>
+            <div class="logo boton-logo">
+                <button onclick="window.location.href ='../html/misGuifos.html'">Crear Guifos</button>
+                <div></div>
+                <div>
+                <div>
+                    <button class="juntos">Elegir tema</button>
+                    <ul>
+                        <li><button id="btn-dia"><span>S</span>ailor Day</button></li>
+                        <li><button id="btn-noche"><span>S</span>ailor Night</button></li>
+                    </ul>
+                </div>
+                <button class="juntos" id="tema"><img src="../assets/dropdown.svg" alt="logo botón"></button>
+            </div>
+                <div></div>
+                <a href="#"><span>M</span>is Guifos</a>
+            </div>
+        </div>
+        <div class="contMisGigos">
+            <div class="p-suger">Mis guifos</div>
+            <div id="contMisGigos">
+                <div class="guifos" id="cont-misGifos">
+                    <!--Aca se inserta el codigo para mis guifos-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/mostrarMisGifos.js"></script>
+</body>
+</html>

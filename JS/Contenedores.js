@@ -33,7 +33,7 @@ class Contenedores {
     }
 
     //funcion para camiar el contenedor para mostrar el preview del gif
-    contenedorPreview = (tituloContenedor, barra) => {
+    contenedorPreview = (tituloContenedor, barra, contenedor, foto) => {
         let contBtnStop = document.getElementsByClassName("btn")[0];//contenedor de botones para detener grabación 
         contBtnStop.classList.replace("btn", "btn-capt");
         contBtnStop.classList.remove("btn-record");
@@ -43,9 +43,10 @@ class Contenedores {
         btnPlay.classList.remove("hidden");
         barra.classList.replace("hidden", "barra");
         tituloContenedor.innerHTML = "Vista Previa";
+        contenedor.innerHTML = foto;
     }
 
-    contenerdorSubir(contenedorCamara, contenedorSubir, tituloContenedor, barra){
+    contenerdorSubir = (contenedorCamara, contenedorSubir, tituloContenedor, barra) => {
         let contBtnCancel = document.getElementsByClassName("btn")[0];//contenedor de botones para subir gif
         contBtnCancel.classList.replace("btn", "btn-capt");        
         let contSubir = document.getElementById("subir");
@@ -55,5 +56,22 @@ class Contenedores {
         contenedorSubir.classList.replace("hidden", "contSubir");
         tituloContenedor.innerHTML = "Subiendo Guifo";
         barra.classList.add("barraSubir");
+    }
+
+    contenedorListo = (contenedorListo, contenedorSubir, tituloContenedor, urlImg) =>{
+        let contBtnSubir = document.getElementsByClassName("btn")[0];//contenedor de botones para subir gif
+        contBtnSubir.classList.replace("btn", "btn-capt");        
+        let contBtnListo = document.getElementById("listo");
+        contBtnListo.classList.replace("btn-capt", "btn");
+        tituloContenedor.innerHTML = "Guifo Subido Con Éxito";
+        contenedorSubir.classList.replace("contSubir", "hidden");
+        contenedorListo.classList.remove("hidden");
+        let img = document.getElementById("img-gifo");
+        img.src = urlImg;
+        document.getElementById("cont_img").classList.remove("hidden");
+        document.getElementById("cont-botones").classList.remove("hidden");
+        let cont = document.getElementsByClassName("crearGif-push")[0];
+        cont.style.height = "391px";
+        cont.style.width = "721px"
     }
 }

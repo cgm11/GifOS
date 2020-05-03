@@ -6,14 +6,16 @@
 .crearGif{
     margin: 59px 19.30% 0px 19.30%;
     position: relative;
-    box-shadow: 2px 2px 0 0 #B4B4B4, -2px -2px 0 0 #FFFFFF;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    padding: 2px;
 }
 .crearGif-push{
     margin: 69px 14.93% 0px 11.45%;
     height: 548px;
     background: #E6E6E6;
     position: relative;
-    box-shadow: 2px 2px 0 0 #B4B4B4, -2px -2px 0 0 #FFFFFF;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    padding: 2px;
 }
 .head-crear{
     display: flex;
@@ -66,13 +68,16 @@
     right: 16px;
     bottom: 16px;
 }
-.btn-crear, #btn-repetir, #btn-subir, #btn-cancelSubir{
+.btn-crear, #btn-repetir, #btn-subir, #btn-cancelSubir, #btn-listo{
     width: 144px;
     height: 36px;
 }
 .btn-blanco{
     background-color: #FFFFFF;
     margin-right: 10px;
+}
+.btn-blanco:hover{
+    background: #F0E5EE;
 }
 .btn-cancelar{
     right: 14px;
@@ -177,4 +182,48 @@
 .contSubir #p2 span{
     text-decoration: line-through;
 }
+.cont-gifListo{
+    display: flex;
+}
+#cont-botones p{
+    margin-top: 49px;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 22px;
+    font-weight: 600;
+}
+#cont_img{
+    width: 365px;
+    height: 191px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+    margin: 27px 24px;
+}
+#cont_img img{
+    width: 361px;
+    padding: 2px
+}
 
+.btn-listo{
+    width: 256px;
+    height: 36px;
+    background: #FFF4FD;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+#listo{
+    right: 46px;
+    bottom: 44px;
+}
+#btn-copiar{
+    margin-top: 16px;
+    margin-bottom: 14px;
+}
+.contMisGigos{
+    margin-top: 180px;
+}
+.marginGif{
+    margin-top: 16px;
+}
